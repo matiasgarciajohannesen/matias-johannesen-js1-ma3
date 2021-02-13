@@ -1,27 +1,27 @@
 const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating";
-const inne = document.querySelector(".games");
+const doc = document.querySelector(".games");
 
 fetch(url)
 .then(Response => Response.json())
 .then(data => game(data))
-.catch(error => inne.innerHTML = "Wooops, something whent wrong...");
+.catch(error => doc.innerHTML = "Wooops, something whent wrong...");
 
 
 game = (games) => {
     console.log(games);
-    inne.innerHTML = ""
+    doc.innerHTML = ""
     for (game of games.results){
         if(game === games.results[8]){
             break
         }
         let newGame = `
-        <div>
-        <h2>${game.name}</h2>
-        <p>${game.rating}</p>
-        <p>${game.tags}</p>
-        </div>
+        <ul>
+        <li><h2>${game.name}</h2></li>
+        <li>Rating ${game.rating}</li>
+        <li>Number of tags: ${game.tags.lenght}</li>
+        </ul>
         `;
-        inne.innerHTML += newGame;
+        doc.innerHTML += newGame;
     } 
 
 };
