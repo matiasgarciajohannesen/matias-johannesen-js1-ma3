@@ -1,6 +1,18 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 20px;
+    color: cornsilk;
+    font-style: italic;
+    font-size: xx-large;
+    margin: 50px;
+}
+
 ul {
     list-style: none;
     background-color: blue;
+    margin: 50px;
 }
 
 li {
@@ -11,7 +23,7 @@ li {
 }
 
 h2 {
-    font-size: xx-large;
+    font-size: x-large;
     font-style: italic;
     color: cornsilk;
 }
