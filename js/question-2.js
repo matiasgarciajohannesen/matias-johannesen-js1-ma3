@@ -14,11 +14,11 @@ game = (games) => {
         if(game === games.results[8]){
             break
         }
-        let newGame = `
+        const newGame = `
         <ul>
         <li><h2>${game.name}</h2></li>
-        <li><p>Rating ${game.rating}</p></li>
-        <li><p>Number of tags:${game.tags.lenght}</p></li>
+        <li><p>Rating: ${game.rating}</p></li>
+        <li><p>Number of tags: ${game.tags.lenght}</p></li>
         </ul>
         `;
         doc.innerHTML += newGame;
