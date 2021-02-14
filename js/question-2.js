@@ -17,8 +17,8 @@ game = (games) => {
         let newGame = `
         <ul>
         <li><h2>${game.name}</h2></li>
-        <li>Rating ${game.rating}</li>
-        <li>Number of tags:${game.tags.lenght}</li>
+        <li><p>Rating ${game.rating}</p></li>
+        <li><p>Number of tags:${game.tags.lenght}</p></li>
         </ul>
         `;
         doc.innerHTML += newGame;
