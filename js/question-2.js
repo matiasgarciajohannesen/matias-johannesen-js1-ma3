@@ -18,7 +18,7 @@ game = (games) => {
         <ul>
         <li><h2>${game.name}</h2></li>
         <li>Rating ${game.rating}</li>
-        <li>Number of tags: ${game.tags.lenght}</li>
+        <li>Number of tags:${game.tags.lenght}</li>
         </ul>
         `;
         doc.innerHTML += newGame;
