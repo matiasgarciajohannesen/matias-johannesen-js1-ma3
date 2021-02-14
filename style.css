@@ -1,6 +1,6 @@
 ul {
     list-style: none;
-    background-color: burlywood;
+    background-color: blue;
 }
 
 li {
@@ -13,4 +13,9 @@ li {
 h2 {
     font-size: xx-large;
     font-style: italic;
+    color: cornsilk;
+}
+
+p {
+    color: cornsilk;
 }
