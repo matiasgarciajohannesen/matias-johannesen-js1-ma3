@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -7,12 +12,15 @@ h1 {
     font-style: italic;
     font-size: xx-large;
     margin: 50px;
+    transform: skewX(-10deg)
 }
 
 ul {
     list-style: none;
     background-color: blue;
     margin: 50px;
+    transform: skewX(-10deg)
+    
 }
 
 li {
